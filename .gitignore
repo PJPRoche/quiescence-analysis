@@ -1,0 +1,93 @@
+# Python
+# Virtual environment
+.venv/
+venv/
+env/
+.python-version
+__pypackages__/
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.whl
+*.wasm
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Python notebooks
+.ipynb_checkpoints/
+.jupyter/
+
+# UV
+uv.lock
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ruff
+.ruff_cache/
+
+# Editor/OS specific
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.bak
+*~
+.env
+.flaskenv
+
+# Logs and databases
+logs/
+*.log
+*.sqlite3
+
+# Database files
+*.db
+
+# Data files (often large and shouldn't be committed)
+data/
+catalog/
+*.csv
+*.json
+*.jsonl
+*.parquet
+*.hdf5
+*.pkl
+*.feather
+
+# Uploads
+uploads/
+
+# R
+.Rhistory
+.RData

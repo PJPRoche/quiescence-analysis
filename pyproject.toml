@@ -1,0 +1,43 @@
+# pyproject.toml
+
+[project]
+name = "quiescence-analysis"
+version = "0.1.0"
+description = "Quiescence Trading System - Analysis Tools"
+authors = [
+    { name = "Your Name", email = "your@email.com" } # <<< REMEMBER TO UPDATE THIS
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "nautilus-trader[ib,docker]==1.222.0",
+    "polygon-api-client",
+    "scipy",
+    "pyyaml>=6.0.2",
+    "watchdog>=6.0.0",
+    "python-dotenv",
+    # Analysis and notebook tools
+    "jupyter",
+    "notebook",
+    "ipykernel>=7.1.0",
+    "nbformat>=5.10.4",
+    "plotly>=6.4.0",
+    # Development tools
+    "pytest",
+    "black",
+    "pre-commit",
+    "nbstripout",
+    "matplotlib>=3.10.8",
+]
+requires-python = ">=3.12, <3.13"
+
+[tool.setuptools]
+packages = ["analysis"] # This tells setuptools to find packages in 'analysis' directory
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["analysis"] # Tell pytest to add 'analysis' to the Python path for imports
